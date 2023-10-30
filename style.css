@@ -45,3 +45,7 @@
     left: 217px;
     transform: scale3d(1, 1, 1) rotateX(0deg) rotateY(319deg) rotateZ(0deg) translate3d(0px, 0px, 0px) skew(0deg, 1deg);
   }
+
+  body {
+    background-color: black;
+  }

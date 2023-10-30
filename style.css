@@ -1,51 +1,62 @@
 #tv {
-    background-image: url(bedroom.jpeg);
-    background-size: cover;
-    width: 700px;
-    height: 700px;
-    display: block;
-    position: relative;
-    perspective: 1000px;
-    perspective-origin: 50% 50%;
-  }
-  
-  video {
-    width: 210px;
-    object-fit: cover;
-    height: 143px;
-    position: absolute;
-    top: 407px;
-    z-index: 1;
-    left: 217px;
-    transform: scale3d(1, 1, 1) rotateX(0deg) rotateY(319deg) rotateZ(0deg) translate3d(0px, 0px, 0px) skew(0deg, 1deg);
-    cursor: pointer;
-  }
-  
-  video + video {
-    opacity: 1;
-    pointer-events: none;
-    filter: blur(7px);
-    z-index: 0;
-    width: 221px;
-    height: 153px;
-    left: 209px;
-    top: 402px;
-  }
-  
-  .filter {
-  width: 210px;
-    object-fit: cover;
-    mix-blend-mode: screen;
-    pointer-events: none;
-    z-index: 2;
-    background-image: url(scanlines.jpeg);
-    height: 143px;
-    position: absolute;
-    top: 407px;
-    left: 217px;
-    transform: scale3d(1, 1, 1) rotateX(0deg) rotateY(319deg) rotateZ(0deg) translate3d(0px, 0px, 0px) skew(0deg, 1deg);
-  }
+  background-image: url(bedroom.jpeg);
+  background-size: cover;
+  width: 700px;
+  height: 700px;
+  display: block;
+  position: relative;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
 
-  body {
-    background-color: black;
-  }
+video {
+  width: 188px;
+  height: 141px;
+  top: 408px;
+  left: 230px;
+  transform: scale3d(1, 1, 1) rotateX(0deg) rotateY(328deg) rotateZ(0deg) translate3d(0px, 0px, 0px) skew(0deg, 2deg);
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+
+video + video {
+  opacity: 0.6;
+  pointer-events: none;
+  filter: blur(7px);
+  z-index: 0;
+  width: 200px;
+  height: 145px;
+  left: 218px;
+  top: 408px;
+}
+
+.filter {
+  object-fit: cover;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 2;
+  background-image: url(scanlines.jpeg);
+  position: absolute;
+  width: 188px;
+  height: 141px;
+  top: 408px;
+  left: 230px;
+  transform: scale3d(1, 1, 1) rotateX(0deg) rotateY(328deg) rotateZ(0deg) translate3d(0px, 0px, 0px) skew(0deg, 2deg);
+}
+
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  min-width: 700px;
+}
+
+html {
+  height: 100%
+}

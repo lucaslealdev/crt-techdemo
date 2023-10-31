@@ -4,6 +4,6 @@ video.addEventListener('play', () => {
 video.addEventListener('pause', () => {
 	reflexo.pause();
 });
-video.addEventListener('updatetime', () => {
+video.addEventListener('timeupdate', () => {
 	reflexo.currentTime = video.currentTime;
 });

@@ -8,9 +8,14 @@
 </head>
 <body>
   <div id="tv">
-    <video id="video" src="video.mp4" preload="auto" onloadstart="this.volume=0.1" playsinline loop onclick="this.play();"></video>
-    <video id="reflexo" src="video.mp4" preload="auto" muted playsinline loop></video>
+    <!-- <video id="video" src="video.mp4" preload="auto" onloadstart="this.volume=0.1" playsinline loop onclick="this.play();"></video> -->
+    <!-- <video id="reflexo" src="video.mp4" preload="auto" muted playsinline loop></video> -->
+    <div class="videoContainer">
+      <iframe id="video" src="https://www.youtube.com/embed/videoseries?si=iHZzxz4x-QgHr_t7&amp;controls=1&amp;list=PLxruNgg68YRWWEHV3Vs16rVnJtlMEFxyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <!-- <iframe id="reflexo" src="https://www.youtube.com/embed/videoseries?si=iHZzxz4x-QgHr_t7&amp;controls=1&amp;list=PLxruNgg68YRWWEHV3Vs16rVnJtlMEFxyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
     <div class="filter"></div>
+    <h2>https://github.com/lucaslealdev/crt-techdemo</h2>
   </div>
   <script src="script.js"></script>
 </body>

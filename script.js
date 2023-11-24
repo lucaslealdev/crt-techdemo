@@ -1,0 +1,1 @@
+document.addEventListener('click', () => whiteNoise.play(), {once: true});

@@ -29,7 +29,7 @@ video {
 
 .filter, video {
   -webkit-mask-image: url(mask.png);
-  mask-image: url(star.svg);
+  mask-image: url(mask.png);
 }
 
 video + video {
